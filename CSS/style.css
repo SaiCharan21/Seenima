@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    overflow: auto;
+    background-color: black;
+    top: -50px;
+}
+
+ul{
+    padding: 0;
+    margin: 0 0 0 250px;
+    list-style: none;
+}
+
+li{
+    float: left;
+    text-align: center;
+    padding-right: 85px;
+}
+
+li a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+}
+
+li a:hover{
+    background-color: goldenrod;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+    color: red;
+}
+
+.seenima-logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.heroimg {
+    padding-top: 30vh;
+    height:800px;
+    background: url('../Images/hero2.png');
+    background-size:cover;
+}
+
+#footer {
+    background-color: goldenrod;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.social-icons {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.fab {
+    color: black;
+}

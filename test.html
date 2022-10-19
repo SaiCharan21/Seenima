@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Seenima | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="Images/favicon-24x24.png">
+    <!-- bootstrap CDN and fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- navbar -->
+
+<div class="seenima-logo">
+    <a href="#"><img src="./Images/img2.png" alt=""></a>
+</div>
+<nav id="navbarr">
+    <ul>
+        <b>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Movies</a></li>
+        </b>
+    </ul>
+</nav>
+
+
+<!-- main banner -->
+<section class="heroimg" id="home"></section>
+
+<!-- about section-->
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">Movie Gallery</h1>
+        <p style="text-align: center">Sample Text</p>
+    </div>
+</section>
+
+
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <u>&copy; Copyright 2022 Seen-ema</u>
+    </div>
+</footer>
+
+<script>
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbarr").style.top = "0";
+        } else {
+            document.getElementById("navbarr").style.top = "-1000px";
+        }
+    }
+</script>
+
+</body>
+
+</html>
