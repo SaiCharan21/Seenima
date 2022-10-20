@@ -1,22 +1,22 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     width: 100%;
     overflow: auto;
     background-color: black;
     top: -50px;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0 0 0 250px;
     list-style: none;
 }
 
-li{
+li {
     float: left;
     text-align: center;
     padding-right: 85px;
@@ -31,7 +31,7 @@ li a {
     text-align: center;
 }
 
-li a:hover{
+li a:hover {
     background-color: goldenrod;
     text-transform: uppercase;
     border-radius: 3px;
@@ -39,7 +39,7 @@ li a:hover{
     color: red;
 }
 
-.seenima-logo img{
+.seenima-logo img {
     position: absolute;
     margin-top: 5px;
     margin-left: 10px;
@@ -47,9 +47,9 @@ li a:hover{
 
 .heroimg {
     padding-top: 30vh;
-    height:800px;
+    height: 800px;
     background: url('../Images/hero2.png');
-    background-size:cover;
+    background-size: cover;
 }
 
 #footer {
