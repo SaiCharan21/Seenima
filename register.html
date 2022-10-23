@@ -1,0 +1,204 @@
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Seenema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/Images/favicon-24x24.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2c26e;
+        }
+
+        #container-register {
+            background-color: #1D1F20;
+            position: relative;
+            top: 20%;
+            margin: auto;
+            width: 340px;
+            height: 480px;
+            border-radius: 0.35em;
+            box-shadow: 0 3px 10px 0 rgb(0, 0, 0);
+            text-align: center;
+            color: white;
+        }
+
+
+        #title {
+            position: relative;
+            background-color: #1A1C1D;
+            width: 100%;
+            padding: 20px 0;
+            border-radius: 0.35em;
+            font-size: 22px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .lock {
+            position: relative;
+            top: 2px;
+        }
+
+        .input {
+            width: 240px;
+            border-radius: 4px;
+            background-color: #373b3d;
+            padding: 8px 0px;
+            margin: 15px auto auto;
+        }
+
+        .input-addon {
+            float: left;
+            background-color: #373b3d;
+            border: 1px solid #373b3d;
+            padding: 4px 8px;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        input[type=checkbox] {
+            cursor: pointer;
+        }
+
+        input[type=text] {
+            color: #949494;
+            margin: 0;
+            background-color: #373b3d;
+            border: 1px solid #373b3d;
+            padding: 6px 0;
+            border-radius: 3px;
+        }
+
+        input[type=password] {
+            color: #949494;
+            margin: 0;
+            background-color: #373b3d;
+            border: 1px solid #373b3d;
+            padding: 6px 0;
+            border-radius: 3px;
+        }
+
+
+        input[type=email] {
+            color: #949494;
+            margin: 0;
+            background-color: #373b3d;
+            border: 1px solid #373b3d;
+            padding: 6px 0;
+            border-radius: 3px;
+        }
+
+
+        *:focus {
+            outline: none;
+        }
+
+
+        input[type=submit] {
+            padding: 6px 25px;
+            background: #373E4A;
+            color: #C1C3C6;
+            font-weight: bold;
+            border: 0 none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .register {
+            padding: 16px 0;
+            text-align: center;
+            margin: 40px auto auto;
+            width: 85%;
+            border-top: 1px solid #C1C3C6;
+        }
+
+
+        #register-link {
+            margin-top: 10px;
+            padding: 6px 25px;
+            background: #373E4A;
+            color: #C1C3C6;
+            font-weight: bold;
+            border: 0 none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- navbar -->
+<div class="seenima-logo">
+    <a href="#"><img src="/Images/img2.png" alt=""></a>
+</div>
+<nav id="navbarr">
+    <ul>
+        <b>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Movies</a></li>
+        </b>
+    </ul>
+</nav>
+
+
+<div id="container-register">
+    <div id="title">
+        <i class="material-icons lock">lock</i> Register
+    </div>
+
+    <form>
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">face</i>
+            </div>
+            <input name="fullname" placeholder="Full Name" type="text">
+        </div>
+
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">vpn_key</i>
+            </div>
+            <input name="password" placeholder="Password" type="password">
+        </div>
+
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">email</i>
+            </div>
+            <input name="email" placeholder="Email" type="email">
+        </div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">location_on</i>
+            </div>
+            <input name="city" placeholder="City" type="text">
+        </div>
+
+
+        <br>
+        <input type="submit" id="signupbtn">
+
+    </form>
+
+
+    <div class="register">
+        Do you already have an account?
+        <a href="login.html">
+            <button id="register-link">Log In here</button>
+        </a>
+    </div>
+</div>
+
+
+</body>
+
+</html>
