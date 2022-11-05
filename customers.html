@@ -15,10 +15,44 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
     <style>
-    body {
-        background-color: #f2c26e;
-    } 
-    
+        body {
+            background-color: #f2c26e;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+
+        .rating > input {
+            display: none;
+        }
+
+        .rating > label {
+            position: relative;
+            width: 135px;
+            font-size: 150px;
+            color: black;
+        }
+
+        .rating > label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0;
+        }
+
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+            opacity: 1 !important;
+        }
+
+        .rating > input:checked ~ label:before {
+            opacity: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -42,31 +76,40 @@
 <!--Link for login & cart-->
 <section id="login-cart">
     <p style="text-align: right;text-decoration: none; padding-right: 15px; padding-top: 15px; font-size: 19px; color: black">
-        <a style="color: red" href="#">Login</a> | <a  style="color: red" href="#">Cart</a></p>
+        <a style="color: red" href="#">Login</a> | <a style="color: red" href="#">Cart</a></p>
 </section>
+<center>
+    <section class="headerimg" id="home"></section>
+</center>
 
-<h1 align = "center"> Customer Service </h1>
-<p> How do you rate your Experience?</p>
-<input type = "radio" id = "rating" value = "1"> 1 Star
-	<br>
-	<input type = "radio" id = "rating" value = "2"> 2 Star
-	<br>
-	<input type = "radio" id = "rating" value = "3"> 3 Star
-	<br>
-	<input type = "radio" id = "rating" value = "4"> 4 Star
-	<br>
-	<input type = "radio" id = "rating" value = "5"> 5 Star
-<p> Additional Comments: </p>
-		<textarea>
+<!--<h1 align="center"><u>Customer Service</u></h1>-->
+<br>
+<div style="text-align: center; padding-top: 50px" id="customer-rating">
+    <h2 align="center"> How do you rate your Experience?</h2>
+    <div class="rating">
+        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+    </div>
 
-		</textarea>
-        <br>
-<fieldset id = "field03">
-    <button class = "B01" type = "button"> Submit Query </button>
-    <button class = "B02" type = "button"> Clear Form </button>
+    <h3> Additional Comments: </h3>
+    <label>
+        <textarea style="min-width:500px; max-width:50px;min-height:100px; border-radius: 20px"></textarea>
+    </label>
+    <br>
+    <fieldset style="padding-top: 15px" id="field03">
+        <button class="btns" type="button"> Submit Rating</button>
     </fieldset>
-
-<p> If you have any more question please contact us at </p>
+</div>
+<br>
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <u>&copy; Copyright 2022 Seenema</u>
+    </div>
+</footer>
 
 </body>
 </html>

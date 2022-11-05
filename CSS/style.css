@@ -8,6 +8,9 @@ nav {
     overflow: auto;
     background-color: black;
     top: -50px;
+    padding-left: 200px;
+    font-size: 20px;
+    border-radius: 3px;
 }
 
 ul {
@@ -41,7 +44,7 @@ li a:hover {
 
 .seenima-logo img {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 9px;
     margin-left: 10px;
 }
 
@@ -50,6 +53,16 @@ li a:hover {
     height: 800px;
     background: url('../Images/hero2.png');
     background-size: cover;
+}
+
+.headerimg {
+    padding-top: 30vh;
+    padding-left: 200px;
+    height: 800px;
+    width: 800px;
+    background: url('../Images/seenima-header.png');
+    background-size: cover;
+    border-radius: 30px;
 }
 
 #footer {
@@ -67,4 +80,10 @@ li a:hover {
 
 .fab {
     color: black;
+}
+
+.btns {
+    border-radius: 15px;
+    width: 150px;
+    height:100px;
 }
