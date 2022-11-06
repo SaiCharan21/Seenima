@@ -86,7 +86,7 @@ li a:hover {
 .btns {
     border-radius: 15px;
     width: 150px;
-    height:100px;
+    height: 100px;
 }
 
 .cards {
@@ -117,7 +117,6 @@ li a:hover {
 }
 
 
-
 .card__info {
     padding: 15px;
     display: flex;
@@ -131,8 +130,16 @@ li a:hover {
     margin-right: 8px;
 }
 
-.card__link{
+.card__link {
     padding-left: 55px;
     color: red;
 }
 
+#payment {
+    height: 500px;
+    width: 600px;
+}
+
+#payment1 {
+    text-align: center
+}

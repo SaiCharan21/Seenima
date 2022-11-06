@@ -15,10 +15,33 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
     <style>
-    body {
-        background-color: #f2c26e;
-    } 
-    
+        body {
+            background-color: #f2c26e;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .column {
+            text-align: center;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -42,20 +65,64 @@
 <!--Link for login & cart-->
 <section id="login-cart">
     <p style="text-align: right;text-decoration: none; padding-right: 15px; padding-top: 15px; font-size: 19px; color: black">
-        <a style="color: red" href="#">Login</a> | <a  style="color: red" href="#">Cart</a></p>
+        <a style="color: red" href="#">Login</a> | <a style="color: red" href="#">Cart</a></p>
 </section>
 
-<h1 align = "center"> Prices </h1>
-<p> Once user create a account they will have a 7 days free trail to experience a wide selection of movies to enjoy from all genres.</p>
-<p> To join as a member, the user has to pay a $7.99 dollars monthly subscription fee that includes unlimited rentals until your membership expires. </p>
-<p>As for non-members, the prices for a flim is $1.99 for one day and $3.49 for two days and When a non-member rents a movie for a certain period, it will automatically be removed from your watchlist at that time with no additional charges.</p>
-<p>As for the payment, Customers can rent movies or purchase a membership via credit card, PayPal, Apple Pay, Google Pay, or alternatively, Bitcoin. While signing into their to accounts to manage their account, billing, favorite movies, and much more.</p>
+<h1 align="center"> Member Pricing </h1>
+<!--<p> Once user create a account they will have a 7 days free trial to experience a wide selection of movies to enjoy from all genres.</p>-->
+<!--<p> To join as a member, the user has to pay a $7.99 dollars monthly subscription fee that includes unlimited rentals-->
+<!--    until your membership expires. </p>-->
 
-<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" height = "50">
-<img src = "https://pbs.twimg.com/profile_images/1417834595899232256/YzltM_gk_400x400.png" height = "50">
-<img src = "https://communities.apple.com/kb20220426/securedImage.jsp?productid=APPLEPAY2&size=240x240" height = "75">
-<img src = "https://lh3.googleusercontent.com/sLOqRZU_8S8C9xMIyc7kD74pyIuJWUi5zBsopj95PZ6C78PFRxwaLN0mMfDbQhKM0F9VEsM-L_0wt-q-HAJwDr3phCjzNjASyjSL" height = "50">
-<img src="https://www.wpexplorer.com/wp-content/uploads/Bitcoin-payments-on-your-WordPress-website.jpg" height="50">
+<!--<p>As for the payment, Customers can rent movies or purchase a membership via credit card, PayPal, Apple Pay, Google Pay, or alternatively, Bitcoin. While signing into their to accounts to manage their account, billing, favorite movies, and much more.</p>-->
+<br>
+<section>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <u><h2>Basic/Non-Member</h2></u>
+            <p>As for non-members, the prices for a flim is $1.99 for one day and $3.49 for two days and When a
+                non-member rents a
+                movie for a certain period, it will automatically be removed from your watchlist at that time with no
+                additional
+                charges.</p>
+            <button style="border-radius: 8px; font-size: 20px">Select Plan</button>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <u><h2>Premium</h2></u>
+            <p> To become a premium member, the user has to pay $7.99 monthly which includes limited two-day
+                rentals.</p>
+            <button style="border-radius: 8px; font-size: 20px">Select Plan</button>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <u><h2>Platinum</h2></u>
+            <p> To become a premium member, the user has to pay $11.99 monthly which includes unlimited movie rentals
+                that will include unlimited use of Sharewatch with any number of friends.
+                Sharewatch is a feature that will allow the user to watch the movie virtually with family and
+                friends.</p>
+            <button style="border-radius: 8px; font-size: 20px">Select Plan</button>
+        </div>
+    </div>
+</section>
+<hr style="color: black; height: 30px">
+
+<br>
+<section>
+    <h2 style="text-align: center">Accepted Payment Methods</h2>
+    <div id="payment1">
+        <p>All payments will be done on a month to month basis with autopay turned on default.</p>
+        <u><b><p style="font-size: 20px">Users will have to cancel atleast 2 days before the end of the next billing period.</p></b></u>
+        <img id="payment" src="./Images/payment.jpeg" cover alt="">
+    </div>
+</section>
+
+<br>
+
+
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <u>&copy; Copyright 2022 Seenema</u>
+    </div>
+</footer>
 
 </body>
 
