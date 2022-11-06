@@ -8,9 +8,10 @@ nav {
     overflow: auto;
     background-color: black;
     top: -50px;
-    padding-left: 200px;
+    padding-left: 925px;
     font-size: 20px;
     border-radius: 3px;
+    /*float: right;*/
 }
 
 ul {
@@ -72,6 +73,8 @@ li a:hover {
     padding-top: 20px;
     font-size: 20px;
     border-radius: 3px;
+    /*font-family: 'Roboto Mono', monospace;*/
+    /*font-family: 'Josefin Sans', sans-serif;*/
 }
 
 .social-icons {
