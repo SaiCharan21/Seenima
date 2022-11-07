@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
@@ -9,9 +10,8 @@ nav {
     background-color: black;
     top: -50px;
     padding-left: 925px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 3px;
-    /*float: right;*/
 }
 
 ul {
@@ -73,8 +73,6 @@ li a:hover {
     padding-top: 20px;
     font-size: 20px;
     border-radius: 3px;
-    /*font-family: 'Roboto Mono', monospace;*/
-    /*font-family: 'Josefin Sans', sans-serif;*/
 }
 
 .social-icons {
@@ -117,6 +115,8 @@ li a:hover {
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
@@ -126,16 +126,22 @@ li a:hover {
     align-items: center;
     background: #eeeeee;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .card__info i {
     font-size: 0.9em;
     margin-right: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .card__link {
     padding-left: 55px;
     color: red;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 #payment {
