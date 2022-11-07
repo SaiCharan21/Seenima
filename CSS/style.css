@@ -40,6 +40,7 @@ li a:hover {
     text-transform: uppercase;
     border-radius: 3px;
     text-decoration: none;
+    width: 175px;
     color: red;
 }
 
@@ -75,10 +76,6 @@ li a:hover {
     border-radius: 3px;
 }
 
-.social-icons {
-    font-size: 40px;
-    cursor: pointer;
-}
 
 .fab {
     color: black;
@@ -126,13 +123,6 @@ li a:hover {
     align-items: center;
     background: #eeeeee;
     font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.card__info i {
-    font-size: 0.9em;
-    margin-right: 8px;
     font-family: 'Josefin Sans', sans-serif;
 
 }
