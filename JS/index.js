@@ -6,7 +6,7 @@
 function displayFriends() {
     const fie = document.getElementById("inp").value
     document.getElementById("list").innerHTML = "--" + fie + " <button>Select Friend</button>";
-    window.open('mailto:'+fie);
+    window.open('mailto:' + fie);
 }
 
 
@@ -79,10 +79,19 @@ function auth() {
     if (email === "admin@gmail.com" && password === "admin123") {
         window.location.assign("movies.html")
         alert("Success")
-    }
-    else{
+    } else {
         alert("Please try again")
 
     }
 
+}
+
+
+function updateCart() {
+    const counterElem = document.querySelector('#cart_amt'),
+        count = +counterElem.innerHTML;
+    counterElem.innerHTML = count + 1;
+    if (count===4){
+        alert("You have reached the limit for renting movies for this session! Come Back Later!")
+    }
 }

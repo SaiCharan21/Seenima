@@ -51,9 +51,16 @@ li a:hover {
 }
 
 .heroimg {
-    padding-top: 30vh;
-    height: 800px;
-    background: url('../Images/hero2.png');
+    /*padding-top: 10vh;*/
+    height: 1075px;
+    background: url('../Images/resized-heroimg.png');
+    background-size: cover;
+}
+
+.moviebannerpic {
+    padding-top: 10vh;
+    height: 1075px;
+    background: url('../Images/movies-banner.png');
     background-size: cover;
 }
 

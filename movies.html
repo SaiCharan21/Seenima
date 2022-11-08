@@ -43,11 +43,11 @@
 <!--Link for login & cart-->
 <section id="login-cart">
     <p style="text-align: right;text-decoration: none; padding-right: 15px; padding-top: 15px; font-size: 19px; color: black">
-        <a style="color: red; font-size: 25px" href="checkout.html">My Cart</a></p>
+        <a style="color: red; font-size: 25px" href="checkout.html">My Cart: <span id="cart_amt">0</span></a></p>
 </section>
 
 <!-- main banner -->
-<section class="heroimg" id="home">
+<section class="moviebannerpic" id="home">
 </section>
 <!--Science Fiction section-->
 <section id="mg">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,7 @@
                 </div>
                 <div class="card__info">
                     <div>
-                        <a href="./" class="card__link">Add to Cart</a>
+                        <a id="cart_click" onclick="updateCart()" class="card__link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -306,19 +306,8 @@
     </div>
 </footer>
 
-<script>
-    window.onscroll = function () {
-        scrollFunction()
-    };
+<script type="text/javascript" src="./JS/index.js"></script>
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("navbarr").style.top = "0";
-        } else {
-            document.getElementById("navbarr").style.top = "-1000px";
-        }
-    }
-</script>
 
 </body>
 
