@@ -76,7 +76,7 @@ function auth() {
     const password = document.getElementById("pasword").value
     console.log(email)
     console.log(password)
-    if (email == "admin@gmail.com" && password == "admin123") {
+    if (email === "admin@gmail.com" && password === "admin123") {
         window.location.assign("movies.html")
         alert("Success")
     }
