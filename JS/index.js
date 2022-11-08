@@ -1,6 +1,6 @@
 // function successLogin() {
 //     // alert("Welcome Back !")
-//     window.location.href = "/movies.html"
+//     window.location.href = "movies.html"
 // }
 
 function displayFriends() {
@@ -77,8 +77,8 @@ function auth() {
     console.log(email)
     console.log(password)
     if (email === "admin@gmail.com" && password === "admin123") {
-        window.location.assign("movies.html")
         alert("Success")
+        window.location.href = "/movies.html"
     } else {
         alert("Please try again")
 
@@ -91,7 +91,7 @@ function updateCart() {
     const counterElem = document.querySelector('#cart_amt'),
         count = +counterElem.innerHTML;
     counterElem.innerHTML = count + 1;
-    if (count===4){
+    if (count === 4) {
         alert("You have reached the limit for renting movies for this session! Come Back Later!")
     }
 }
