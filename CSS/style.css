@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
@@ -8,8 +9,8 @@ nav {
     overflow: auto;
     background-color: black;
     top: -50px;
-    padding-left: 200px;
-    font-size: 20px;
+    padding-left: 925px;
+    font-size: 25px;
     border-radius: 3px;
 }
 
@@ -39,6 +40,7 @@ li a:hover {
     text-transform: uppercase;
     border-radius: 3px;
     text-decoration: none;
+    width: 175px;
     color: red;
 }
 
@@ -49,9 +51,16 @@ li a:hover {
 }
 
 .heroimg {
-    padding-top: 30vh;
-    height: 800px;
-    background: url('../Images/hero2.png');
+    /*padding-top: 10vh;*/
+    height: 1075px;
+    background: url('../Images/resized-heroimg.png');
+    background-size: cover;
+}
+
+.moviebannerpic {
+    padding-top: 10vh;
+    height: 1075px;
+    background: url('../Images/movies-banner.png');
     background-size: cover;
 }
 
@@ -74,10 +83,6 @@ li a:hover {
     border-radius: 3px;
 }
 
-.social-icons {
-    font-size: 40px;
-    cursor: pointer;
-}
 
 .fab {
     color: black;
@@ -114,6 +119,8 @@ li a:hover {
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
@@ -123,16 +130,15 @@ li a:hover {
     align-items: center;
     background: #eeeeee;
     font-size: 20px;
-}
+    font-family: 'Josefin Sans', sans-serif;
 
-.card__info i {
-    font-size: 0.9em;
-    margin-right: 8px;
 }
 
 .card__link {
     padding-left: 55px;
     color: red;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 #payment {

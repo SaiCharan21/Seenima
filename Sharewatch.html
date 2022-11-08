@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Seenima | Home</title>
+    <title>Seenima | Sharewatch</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -22,6 +22,28 @@
             font-family: 'Josefin Sans', sans-serif;
 
         }
+
+        input[type=text], select {
+            width: 45%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+
+        .video-control:not(.playing) .video-control-pause,
+        .video-control.playing .video-control-play {
+            display: none;
+        }
+
+        .video-control-symbol {
+            font: 1.75em/0 Apple Color Emoji;
+            vertical-align: -0.15em;
+        }
+
     </style>
 </head>
 <body>
@@ -36,33 +58,39 @@
             <li><a href="about.html">About</a></li>
             <li><a href="customers.html">Feedback</a></li>
             <li><a href="movies.html">Movies</a></li>
+            <li><a href="Sharewatch.html">Sharewatch</a></li>
+
         </b>
     </ul>
 </nav>
 
 
+
 <!--Link for login & cart-->
 <section id="login-cart">
     <p style="text-align: right;text-decoration: none; padding-right: 15px; padding-top: 15px; font-size: 19px; color: black">
-        <a style="color: red; font-size: 25px" href="login.html">Login Here</a></p>
+        <a style="color: red; font-size: 25px" href="checkout.html">My Cart</a></p>
 </section>
-
 <!-- main banner -->
-<section class="heroimg" id="home">
-</section>
+
 <div class="container mt-4 pt-4" style="text-align: center; text-decoration: none">
-    <h2>Ready watch all the great movies we have?</h2>
-    <h3><a href="register.html"> Register Here !!</a></h3>
+    <u><h1>Sharewatch</h1></u>
+    <br>
+    <br>
+    <h3>Add a Friend to Your Friends List! (By Email)</h3>
+    <button id="invite" onclick="displayFriends()">Invite</button>
+    <input id="inp" type="text">
+    <br>
+    <br>
+    <u><h3>Friends List</h3></u>
+    <span style="font-size: 20px" id="list"></span>
 </div>
-<section>
-    <hr>
 
-</section>
-
-<!-- Movie Gallery-->
+<br>
+<hr>
 <section id="mg">
     <div class="container mt-4 pt-4">
-        <h1 class="text-center">Featured Movies</h1>
+        <h1 class="text-center">Select a Movie</h1>
         <div class="cards">
             <div class="card">
                 <img class="card__image" src="./Images/blackadam.jpeg" alt="">
@@ -71,7 +99,11 @@
                     <p>Director: Jaume Collet-Serra</p>
                     <p>Cast: Dwayne Johnson, Sarah Shahi, Pierce Bronsan</p>
                 </div>
-
+                <div class="card__info">
+                    <div>
+                        <a id="ba" onclick="displayBA()" class="card__link">Watch</a>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <img class="card__image" src="./Images/tlt.jpeg" alt="">
@@ -80,7 +112,11 @@
                     <p>Director: Taika Waititi</p>
                     <p>Cast: Chris Themsworth, Natalie Portman, Christian Bale, Tessa Thompson</p>
                 </div>
-
+                <div class="card__info">
+                    <div>
+                        <button id="tlt" onclick="displayTLT()" class="card__link">Watch</button>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <img class="card__image" src="./Images/endgame.jpeg" alt="">
@@ -89,7 +125,11 @@
                     <p>Director: Russo Brothers</p>
                     <p>Cast: Robert Downey Jr, Chris Evans, Mark Ruffalo, Chris Themsworth, Jeremy Renner</p>
                 </div>
-
+                <div class="card__info">
+                    <div>
+                        <a id="endgame" onclick="displayEndgame()" class="card__link">Watch</a>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <img class="card__image" src="./Images/bp.jpeg" alt="">
@@ -98,12 +138,35 @@
                     <p>Director: Ryan Coogler</p>
                     <p>Cast: Chadwick Boseman, Micheal B Jordan, Letitia Wright, Tenock Huerta</p>
                 </div>
+                <div class="card__info">
+                    <div>
+                        <a id="bp" onclick="displayBP()" class="card__link">Watch</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<br>
+<hr>
+<section>
+    <div id="movie"
+         style="background-color: black; width: 1300px; height: 1000px; border-radius: 9px; border:6px silver;"
+         class="container mt-4 pt-4">
+        <!--        <p style="color: white; font-size: 60px; padding-left: 400px; padding-top: 450px"><span id="movie_name"></span> is Starting...</p>-->
+        <button>
+        <span class="video-control-play">
+			<span class="video-control-symbol" aria-hidden="true">▶️</span>
+			<span class="video-control-label">Play</span>
+		</span>
+                <span class="video-control-pause">
+			<span class="video-control-symbol" aria-hidden="true">⏸</span>
+			<span class="video-control-label">Pause</span>
+		</span>
+        </button>
+    </div>
+</section>
 
+<br>
 
 <!-- footer section-->
 <footer id="footer">
@@ -112,19 +175,8 @@
     </div>
 </footer>
 
-<script>
-    window.onscroll = function () {
-        scrollFunction()
-    };
+<script type="text/javascript" src="./JS/index.js"></script>
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("navbarr").style.top = "0";
-        } else {
-            document.getElementById("navbarr").style.top = "-1000px";
-        }
-    }
-</script>
 
 </body>
 
