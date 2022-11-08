@@ -74,7 +74,7 @@
             font-size: 45px;
         }
 
-        .btn {
+        .box {
             background-color: #04AA6D;
             color: white;
             padding: 12px;
@@ -82,17 +82,12 @@
             border: none;
             width: 100%;
             border-radius: 3px;
-            cursor: pointer;
             font-size: 17px;
-        }
-
-        .btn:hover {
-            background-color: #45a049;
         }
 
         span.price {
             float: right;
-            color: grey;
+            color: white;
         }
     </style>
 
@@ -127,30 +122,31 @@
                     <div class="container">
                         <form id="f01">
 
+                            <!--Billing Address Info-->
                             <div class="row">
                                 <div class="col02">
                                     <h3>Billing Address</h3>
                                     <label for="fullname"<i class="fa fa-user"></i> Full Name </label>
-                                    <input type="text" id="fullname" name="fullname" placeholder="Shasta Cougar">
+                                    <input type="text" id="fullname" name="fullname" placeholder="Ex:Shasta Cougar">
                                     <label for="email"<i class="fa fa-envelope"></i> Email</label>
-                                    <input type="text" id="email" name="email" placeholder="Shasta@domain.com">
+                                    <input type="text" id="email" name="email" placeholder="Ex:Shasta@domain.com">
                                     <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
-                                    <input type="text" id="address" name="address" placeholder="4688 Scott Street">
+                                    <input type="text" id="address" name="address" placeholder="Ex:4688 Scott Street">
                                     <label for="city"><i class="fa fa-institution"></i> City</label>
-                                    <input type="text" id="city" name="city" placeholder="Houston">
-
+                                    <input type="text" id="city" name="city" placeholder="Ex:Houston">
                                     <div class="row">
                                         <div class="col02">
                                             <label for="state">State</label>
-                                            <input type="text" id="state" name="state" placeholder="TX">
+                                            <input type="text" id="state" name="state" placeholder="Ex:TX">
                                         </div>
                                         <div class="col02">
                                             <label for="zip">Zip</label>
-                                            <input type="text" id="zip" name="zip" placeholder="77004">
+                                            <input type="text" id="zip" name="zip" placeholder="Ex:77004">
                                         </div>
                                     </div>
                                 </div>
 
+                                <!--CC Logos-->
                                 <div class="col02">
                                     <h3>Payment</h3>
                                     <label for="fullname">Accepted Cards</label>
@@ -160,46 +156,51 @@
                                         <i class="fa fa-cc-mastercard" style="color:red;"></i>
                                         <i class="fa fa-cc-discover" style="color:orange;"></i>
                                     </div>
-                                    <label for="cname">Name on Card</label>
-                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+
+                                    <!--CC Info-->
+                                    <label for="ccname">Name on Card</label>
+                                    <input type="text" id="ccname" name="ccname" placeholder="Ex:Brad Pitt">
                                     <label for="ccnum">Credit card number</label>
-                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                                    <label for="expmonth">Exp Month</label>
-                                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                                    <input type="text" id="ccnum" name="ccnum" placeholder="Ex:222-444-5555">
+                                    <label for="ccmonth">Exp Month</label>
+                                    <input type="text" id="ccmonth" name="ccmonth" placeholder="Ex:November">
                                     <div class="row">
                                         <div class="col02">
-                                            <label for="expyear">Exp Year</label>
-                                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                            <label for="ccyear">Exp Year</label>
+                                            <input type="text" id="ccyear" name="ccyear" placeholder="Ex:2022">
                                         </div>
                                         <div class="col02">
                                             <label for="cvv">CVV</label>
-                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                            <input type="text" id="cvv" name="cvv" placeholder="Ex:903">
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <label>
-                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                            </label>
-                            <input type="submit" value="Continue to checkout" class="btn">
                         </form>
                     </div>
                 </div>
+
+                <!--Cart List-->
                 <div class="col03">
                     <div class="container">
-                        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-                        <p><a href="#">Avengers Endgame</a> <span class="price">$1.99</span></p>
-                        <p><a href="#">Black Panther</a> <span class="price">$1.99</span></p>
-                        <p><a href="#">Black Adam</a> <span class="price">$3.49</span></p>
-                        <p><a href="#">Shang Chi</a> <span class="price">$3.49</span></p>
-                        <hr>
-                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                        <h4>Cart <span class="price" style="color:white"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                        <ul>
+                            <li>Avengers - $1.99</li>
+                            <br>
+                            <li>Shang Chi - $3.49</li>
+                            <br>
+                            <li>Black Panther - $3.49</li>
+                            <br>
+                            <li>Black Adam - $1.99</li>
+                        </ul>
+                        <h4> <span class="price" style="color:white"><b> Total: $10.96</b></span></h4>
                     </div>
+
+                    <!--Submit Payment Info Button-->
+                        <div class="container">
+                            <input type="submit" value="Submit Payment Information" class="box">
+                        </div>
                 </div>
             </div>
-
-
-
 </body>
 </html>
