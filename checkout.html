@@ -111,10 +111,7 @@
 </nav>
 
 <!--Link for login & cart-->
-<section id="login-cart">
-    <p style="text-align: right;text-decoration: none; padding-right: 15px; padding-top: 15px; font-size: 19px; color: black">
-        <a style="color: red" href="#">Login</a> | <a style="color: red" href="#">Cart</a></p>
-</section>
+<br>
 
 <!--Checkout Form-->
 <div class="row">
@@ -198,9 +195,11 @@
 
         <!--Submit Payment Info Button-->
         <div class="container">
-            <input type="submit" value="Submit Payment Information" class="box">
+            <input type="submit" onclick="sendReciept()" value="Submit Payment Information" class="box">
         </div>
     </div>
 </div>
+<script type="text/javascript" src="./JS/index.js"></script>
+
 </body>
 </html>

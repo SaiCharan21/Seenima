@@ -10,6 +10,13 @@ function displayFriends() {
 }
 
 
+function sendReciept() {
+    const fie = document.getElementById("email").value
+    // document.getElementById("list").innerHTML = "--" + fie + " <button>Select Friend</button>";
+    window.open('mailto:' + fie);
+}
+
+
 function displayEndgame() {
     const movie_name = document.getElementById("endgame")
     movie_name.addEventListener("click", () => {
@@ -46,31 +53,6 @@ function displayBA() {
     })
 }
 
-// const modal = document.getElementById("myModal");
-//
-// // Get the button that opens the modal
-// const btn = document.getElementById("myBtn");
-//
-// // Get the <span> element that closes the modal
-// const span = document.getElementsByClassName("close")[0];
-//
-// // When the user clicks the button, open the modal
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// }
-//
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//     modal.style.display = "none";
-// }
-//
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//     if (event.target === modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
 function auth() {
     const email = document.getElementById("emaill").value
     const password = document.getElementById("pasword").value
@@ -78,12 +60,25 @@ function auth() {
     console.log(password)
     if (email === "admin@gmail.com" && password === "admin123") {
         alert("Success")
-        window.location.href = "/movies.html"
+        window.open("movies.html");
     } else {
         alert("Please try again")
 
     }
+}
 
+function register(){
+    const email = document.getElementById("emaill").value
+    const password = document.getElementById("pasword").value
+    console.log(email)
+    console.log(password)
+    if (email === "admin1@gmail.com" && password === "admin123") {
+        alert("Success")
+        // window.open("profiles.html");
+    } else {
+        alert("Please try again")
+
+    }
 }
 
 
@@ -94,4 +89,25 @@ function updateCart() {
     if (count === 4) {
         alert("You have reached the limit for renting movies for this session! Come Back Later!")
     }
+}
+
+
+function rsetpwd(){
+    document.getElementById("resetpwdd").innerHTML+="<a href= /password-reset.html></a>"
+}
+
+function updateProfile(){
+    const name = document.getElementById('name').value;
+    const emailInput = document.getElementById('email');
+    const loc = document.getElementById('loc');
+    const phone = document.getElementById('phone');
+
+
+    document.getElementById("name").value = name
+    document.getElementById("email").value = emailInput
+    document.getElementById("loc").value = loc
+    document.getElementById('phone').value = phone
+
+    alert("Profile updated!")
+
 }
