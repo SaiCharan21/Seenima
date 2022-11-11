@@ -67,13 +67,13 @@ function auth() {
     }
 }
 
-function register(){
+function register() {
     const email = document.getElementById("emaill").value
     const password = document.getElementById("pasword").value
     console.log(email)
     console.log(password)
     if (email === "admin1@gmail.com" && password === "admin123") {
-        alert("Success")
+        alert("Successfully Registered")
         // window.open("profiles.html");
     } else {
         alert("Please try again")
@@ -92,11 +92,21 @@ function updateCart() {
 }
 
 
-function rsetpwd(){
-    document.getElementById("resetpwdd").innerHTML+="<a href= /password-reset.html></a>"
+function rsetpwd() {
+    const email = document.getElementById("email").value
+    const password = document.getElementById("pasword").value
+    console.log(email)
+    console.log(password)
+    if (email === "admin@gmail.com" && password === "admin1234") {
+        alert("Success")
+        window.open("profiles.html");
+    } else {
+        alert("Please try again")
+
+    }
 }
 
-function updateProfile(){
+function updateProfile() {
     const name = document.getElementById('name').value;
     const emailInput = document.getElementById('email');
     const loc = document.getElementById('loc');
