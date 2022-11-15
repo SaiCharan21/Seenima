@@ -36,11 +36,9 @@ li a {
 }
 
 li a:hover {
-    background-color: goldenrod;
     text-transform: uppercase;
     border-radius: 3px;
     text-decoration: none;
-    width: 190px;
     color: red;
 }
 
