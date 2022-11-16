@@ -10,6 +10,14 @@ function displayFriends() {
 }
 
 
+function submitfeedback() {
+    const movie_name = document.getElementById("btn-feed")
+    movie_name.addEventListener("click", () => {
+        alert("Thank You for taking the time to give us your feedback!")
+    })
+}
+
+
 function sendReciept() {
     const fie = document.getElementById("email").value
     // document.getElementById("list").innerHTML = "--" + fie + " <button>Select Friend</button>";
