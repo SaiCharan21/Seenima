@@ -82,7 +82,7 @@ function register(){
     console.log(password)
     if (email === "admin1@gmail.com" && password === "admin123") {
         alert("Success")
-        // window.open("profiles.html");
+        window.open("profiles.html");
     } else {
         alert("Please try again")
 
